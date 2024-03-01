@@ -86,7 +86,7 @@ a:hover{
 
 
 .jumbotron {
-  background-image: url(/assets/image/jmb-bg-two.png);
+  background-image: url(../assets/image/jmb-bg-two.png); 
   background-repeat: no-repeat;
   background-position: center center;
   font-size: 48px;
