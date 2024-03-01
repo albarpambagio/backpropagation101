@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backpropagation 101</title>
+
+    <link rel="stylesheet" href="assets/styles.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="jumbotron">
+        <h1 class="title">Backpropagation 101</h1>
+        <p class="subtitle">Unraveling Neural Networks: Understanding the Backpropagation Algorithm</p>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#history">History</a>
+          </li>
+          <li>
+            <a href="#explanation">101</a>
+          </li>
+          <li>
+            <a href="#references">References</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-border">
+      <!-- Article -->
+      <div id="content">
+        <article id="history" class="card">
+          <h2>1. The Past</h2>
+          <p>Backpropagation, developed in the 1970s, emerged as a pivotal technique for optimizing complex nested functions through automatic differentiation. However, it wasn't until 1986, with the landmark paper "Learning Representations by Back-Propagating Errors" by Rumelhart, Hinton, and Williams, that the machine learning community recognized its significance.
+          </p>
+          <p>Prior to backpropagation, researchers sought methods to train multilayer artificial neural networks to automatically discover effective "internal representations" or features. These features simplify learning and enhance accuracy by activating nodes based on specific input characteristics. Hand-engineering features, prevalent in fields like computer vision, demanded extensive expertise and was slow.</p>
+          <p>Backpropagation revolutionized this process by demonstrating that neural networks could autonomously learn intricate internal representations. Notably, nodes in trained networks mirrored features identified by human experts and neuroscientists studying mammalian brains. By automating feature discovery and significantly reducing time and resource constraints, backpropagation broadened the application of neural networks to previously inaccessible problems.</p>
+        </article>
+
+        <article id="explanation" class="card">
+          <h2>2. Brief Explanation</h2>
+          <p>
+            Backpropagation stands as a foundational technique within the realm of machine learning, serving as a pivotal mechanism for training neural networks through the estimation of gradients. This algorithm functions by relaying error signals backward throughout the network, thereby facilitating adjustments to weights and biases with the objective of minimizing the error function. The process encompasses two primary phases: forward propagation, which involves passing inputs through the network to generate outputs, and backward propagation, where errors are computed and utilized to iteratively refine network parameters until the error is minimized.
+          </p>
+
+          <p>
+            Essential to the training of neural networks, backpropagation enables the efficient adjustment of weights based on error analysis, thereby enhancing model accuracy. While offering advantages such as ease of implementation and adaptability, it also exhibits limitations, including susceptibility to variations in training data quality and noise. Nevertheless, despite its drawbacks, backpropagation remains a potent method for enhancing neural network performance.
+          </p>
+
+          <p>
+            The algorithm involves several steps, including the computation of gradients for each weight and bias, updating these parameters based on the error, and repeating the process until convergence. Variants of backpropagation, such as stochastic (online), batch, and mini-batch training methods, offer distinct approaches to weight and bias adjustment using gradients derived from training data. Overall, backpropagation plays a critical role in optimizing neural networks by iteratively refining parameters to minimize errors and enhance model performance.
+          </p>
+        </article>
+
+        <article id="references" class="card">
+          <h2>3. References</h2>
+          <p>
+
+          </p>
+          <ul>
+            <li class="ref"><a  href="https://en.wikipedia.org/wiki/Backpropagation">https://en.wikipedia.org/wiki/Backpropagation</a></li>
+            <li class="ref"><a  href="https://builtin.com/machine-learning/backpropagation-neural-network">https://builtin.com/machine-learning/backpropagation-neural-network</a></li>
+            <li class="ref"><a  href="https://www.edureka.co/blog/backpropagation/">https://www.edureka.co/blog/backpropagation/</a></li>
+            <li class="ref"><a  href="https://visualstudiomagazine.com/articles/2015/07/01/variation-on-back-propagation.aspx">https://visualstudiomagazine.com/articles/2015/07/01/variation-on-back-propagation.aspx</a></li>
+            <li class="ref"><a  href="https://www.elprocus.com/what-is-backpropagation-neural-network-types-and-its-applications/">https://www.elprocus.com/what-is-backpropagation-neural-network-types-and-its-applications/</a></li>
+            <li class="ref"><a  href="https://towardsdatascience.com/understanding-backpropagation-algorithm-7bb3aa2f95fd">https://towardsdatascience.com/understanding-backpropagation-algorithm-7bb3aa2f95fd</a></li>
+            <li class="ref"><a  href="https://brilliant.org/wiki/backpropagation/">https://brilliant.org/wiki/backpropagation/</a></li>
+          </ul> 
+          
+
+        </article>
+      </div>
+
+      <!-- Aside -->
+      <aside>
+        <article class="profile card">
+          <header>
+            <h2>The Bigger Picture</h2>
+            <p>Machine learning is a type of technology that allows computers to learn from data and make decisions or predictions without being explicitly programmed for each task. Instead of following fixed rules, machine learning algorithms use patterns in data to improve their performance over time. It's like teaching a computer to recognize patterns and make decisions on its own based on examples it has seen before. Machine learning is used in various applications such as image recognition, speech recognition, recommendation systems, medical diagnosis, and much more. It's all about enabling computers to learn and improve from experience, just like humans do.</p>
+          </header>
+        </article>
+      </aside>
+    </main>
+
+    <footer>
+      <p>HTML & CSS Portfolio by Albar Pambagio Arioseto (2024)</p>
+    </footer>
+  </body>
+</html>
