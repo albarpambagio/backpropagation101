@@ -139,18 +139,22 @@ main {
   overflow: auto;
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #content {
-  float: left;
+  flex-grow: 3;
   width: 75%;
   padding-left: 40px;
 }
 
 
 aside {
-  float: right;
+  flex-grow: 1;
   width: 25%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 0 20px;
 }
 
 header {
@@ -158,9 +162,14 @@ header {
 }
 
 @media screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column; 
+  }
+  
   #content,
   aside {
-    width: 100%;
+    flex-grow: 1; 
     padding: 0;
+    width: 100%;
   }
 }
